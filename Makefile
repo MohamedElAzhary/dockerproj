@@ -3,7 +3,7 @@ setup:
 	python3 -m venv .dockerproj
 	
 install:
-	pip install --upgrade pip="21.1.1" && \
+	pip install --upgrade pip=="21.1.1" && \
 	sudo wget -O /bin/hadolint https://github.com/hadolint/hadolint/releases/download/v1.16.3/hadolint-Linux-x86_64 && \
 	sudo chmod +x /bin/hadolint && \
 	pip install -r requirements.txt
